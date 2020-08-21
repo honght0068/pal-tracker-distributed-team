@@ -8,6 +8,8 @@ applications:
   env:
 #    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-team1.apps.evans.pal.pivotal.io
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
+    MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: "*"
+    MANAGEMENT_ENDPOINT_HEALTH_SHOWDETAILS: "always"
   services:
   - tracker-backlog-database
   - tracker-service-registry
